@@ -1,0 +1,6 @@
+mq-helper:
+  event-bus:
+    app-name: event-bus-subscriber-demo
+    mq: kafka
+    kafka:
+      bootstrap-servers: localhost:9092
