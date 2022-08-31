@@ -3,6 +3,7 @@ package org.mqhelper.eventbus.subscriber.listener;
 import org.mqhelper.event.ByeEvent;
 import org.mqhelper.event.HelloEvent;
 import org.mqhelper.eventbus.UniverseSubscriber;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloEventListener {
 
+
+    //@EventListener
     @UniverseSubscriber
     public void on(HelloEvent event) {
         System.out.println("process HelloEvent" + event);
